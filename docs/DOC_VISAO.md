@@ -45,6 +45,25 @@ O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfi
 
 
 
+
+## Lista de Requisitos Não-Funcionais
+ 
+| Requisito | Descrição
+| RNF001 - Deve ser acessível via navegador | Deve abrir perfeitamente no Chrome. |
+
 ## Modelo Conceitual
 
 ![alt text](https://github.com/jan1o/DepPosts/blob/master/docs/images/diagra_classes.jpeg?raw=true)
+
+
+## Riscos
+
+Tabela com o mapeamento dos riscos do projeto, as possíveis soluções e os responsáveis.
+
+|  ***Data*** | ***Risco*** | ***Prioridade*** | ***Responsável*** | ***Status*** | ***Providência/Solução*** |
+| - | - | - | - | - | - |
+| 21/03/2021 | Não aprendizado das ferramentas utilizadas pelos componentes do grupo | Alta | Todos | Vigente | Reforçar estudos sobre as ferramentas e aulas com a integrante que conhece a ferramenta |
+| 21/03/2021 | Divisão de tarefas mal sucedida | Baixa | Gerente | Vigente | Acompanhar de perto o desenvolvimento de cada membro da equipe |
+| 21/03/2021 | Implementação de protótipo com as tecnologias | Alto | Todos | Vigente | Encontrar tutorial com a maioria da tecnologia e implementar um caso base do sistema |
+| 21/03/2021 | Prazo de entrega não ser obedecido | Alto | Todos | Vigente | Se esforçar para garantir a entrega do projeto no prazo definido. |
+
