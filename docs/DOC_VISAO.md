@@ -48,7 +48,8 @@ O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfi
 
 ## Lista de Requisitos Não-Funcionais
  
-| Requisito | Descrição
+| Requisito | Descrição |
+| - | - |
 | RNF001 - Deve ser acessível via navegador | Deve abrir perfeitamente no Chrome. |
 
 ## Modelo Conceitual
