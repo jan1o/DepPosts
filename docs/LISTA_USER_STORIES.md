@@ -28,6 +28,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | Testes de Aceitação (TA) | | | | |
 | - | - | - | - | - |
+| ***Código*** | ***Descrição*** | ***Passos*** | ***Resultado Esperado*** | ***Resultado Obtido*** |
 | TA01.01 | Login de Usuário bem sucedido. | Usuário digita login e senha corretamente. | Sucesso ao logar. |  |
 | TA01.02 | Login de usuário mal sucedido. | Usuário digita login ou senha incorreto. | Falha ao logar |  |
 | TA01.03 | Alteração de dados pessoais. | Usuário Altera dados pessoais. | Dados alterados com sucesso. |  |

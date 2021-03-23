@@ -20,7 +20,6 @@ Documento construído a partido do Modelo BSI - Doc 001 - Documento de Visão qu
 O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfis/atores:
 | Perfil | Descrição |
 | - | - |
-|  ***Membro*** | ***Competências*** | 
 | Administrador | Este usuário realiza os cadastros base e pode realizar qualquer função. | 
 | Usuário | Este usuário pode realizar cadastros de posts e manipular seus posts. |
 | Revista | Este usuário pode realizar cadastro próprio e ter posts associados a si. |
