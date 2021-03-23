@@ -1,6 +1,6 @@
 # Documento Lista de User Stories  
 
-Documento construído a partido do Modelo BSI - Doc 004 - Lista de User Stories que pode ser encontrado nesse [link]( https://docs.google.com/document/d/1Ns2J9KTpLgNOpCZjXJXw_RSCSijTJhUx4zgFhYecEJg/edit?usp=sharing). 
+Documento construído a partido do Modelo BSI - Doc 004 - Lista de User Stories que pode ser encontrado nesse [link](https://docs.google.com/document/d/1Ns2J9KTpLgNOpCZjXJXw_RSCSijTJhUx4zgFhYecEJg/edit?usp=sharing). 
 
 ## Descrição  
 
