@@ -3,15 +3,15 @@
 Documento construído a partido do Modelo BSI - Doc 001 - Documento de Visão que pode ser encontrado nesse [link](https://docs.google.com/document/d/1DPBcyGHgflmz5RDsZQ2X8KVBPoEF5PdAz9BBNFyLa6A/edit?usp=sharing). 
 
 ## Equipe e Definição de Papéis
-| - | - | - |
 |  ***Membro*** | ***Papel*** | ***E-Mail*** |
+| - | - | - |
 | Bruno | Programador, testador | brunno.linkin@gmail.com |
 | Jorge | Programador, testador | jorgejunioufrn@gmail.com |
 | Jânio | Programador, testador | juniorjanio2016@gmail.com |
 
 ## Matriz de Competências
-| - | - |
 |  ***Membro*** | ***Competências*** | 
+| - | - |
 | Bruno | Desenvolvedor, Python, PyCharm, Github |  
 | Jorge | Desenvolvedor, Python, Github |
 | Jânio | Desenvolvedor Java, Eclipse, Python, PyCharm, Github, C#, Unity |
