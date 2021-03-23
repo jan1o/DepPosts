@@ -41,6 +41,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | TA01.10 | Cadastrar informações pessoais mal sucedido. | Usuário não digita informações pessoais necessárias. | Usuário não cadastrado. |  |
 | TA01.11 | Listar Todos Usuários | Administrador tenta visualizar usuários. | Lista de todos os Usuários exibida. |  |
 | TA01.12 | Exibir um usuário | Administrador tenta visualizar os dados pessoais de um usuário | Dados pessoais (exceto senha) exibidos. |  |
+| TA01.13 | Consultar Informações de Usuário | Usuário tenta ver suas informações pessoais | Todos os dados pessoais exibidos |  |
 
 ### User Story US02 - Manter Posts  
 
