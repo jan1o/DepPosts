@@ -7,12 +7,14 @@ Documento construído a partido do Modelo BSI - Doc 001 - Documento de Visão qu
 | - | - | - |
 |  ***Membro*** | ***Papel*** | ***E-Mail*** |
 | Bruno | Programador, testador | brunno.linkin@gmail.com |
+| Jorge | Programador, testador | jorgejunioufrn@gmail.com |
 
 ## Matriz de Competências
 | Requisitos envolvidos | |
 | - | - |
 |  ***Membro*** | ***Competências*** | 
 | Bruno | Desenvolvedor, Python, PyCharm, Github |  
+| Jorge | Desenvolvedor, Python, Github |
 
 ## Matriz de Competências 
 O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfis/atores:
@@ -35,6 +37,13 @@ O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfi
 | RF005 - Listar todos os Posts próprios | Listar todos os Posts cadastrados por si.  | Cliente  |
 | RF006 - Visualizar especificação de um Post | Visualizar as informações de qualquer Post cadastrado.  |  Cliente |
 | RF007 - Visualizar especificação de um Post Próprio |  Visualizar as informações de um Post cadastrado por si próprio com a opção de deletar e alterar tal Post | Cliente  |
+| RF014 - Cadastrar Revista | Cadastrar uma revista no sistema. Uma revista possui  nome, login, senha | Revista |
+| RF015 - Alterar dados de Revista. | Alterar seus dados cadastrados no sistema. | Revista |
+| RF016 - Deletar Revista. | Excluir seu cadastro no sistema. | Revista |
+| RF017 - Visualizar Revistas. | Visualizar lista de todas as Revistas cadastradas no sistema | Revista/Usuário |
+| RF018 - Visualizar especificação de uma Revista. | Visualizar os dados públicos de uma Revista cadastrada no sistema. | Revista/Usuário |
+
+
 
 ## Modelo Conceitual
 
