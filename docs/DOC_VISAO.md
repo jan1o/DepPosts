@@ -3,20 +3,20 @@
 Documento construído a partido do Modelo BSI - Doc 001 - Documento de Visão que pode ser encontrado nesse [link](https://docs.google.com/document/d/1DPBcyGHgflmz5RDsZQ2X8KVBPoEF5PdAz9BBNFyLa6A/edit?usp=sharing). 
 
 ## Equipe e Definição de Papéis
-| Requisitos envolvidos | | |
 | - | - | - |
 |  ***Membro*** | ***Papel*** | ***E-Mail*** |
 | Bruno | Programador, testador | brunno.linkin@gmail.com |
 | Jorge | Programador, testador | jorgejunioufrn@gmail.com |
+| Jânio | Programador, testador | juniorjanio2016@gmail.com |
 
 ## Matriz de Competências
-| Requisitos envolvidos | |
 | - | - |
 |  ***Membro*** | ***Competências*** | 
 | Bruno | Desenvolvedor, Python, PyCharm, Github |  
 | Jorge | Desenvolvedor, Python, Github |
+| Jânio | Desenvolvedor Java, Eclipse, Python, PyCharm, Github, C#, Unity |
 
-## Matriz de Competências 
+## Perfis dos Usuários
 O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfis/atores:
 | Perfil | Descrição |
 | - | - |
@@ -37,13 +37,17 @@ O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfi
 | RF005 - Listar todos os Posts próprios | Listar todos os Posts cadastrados por si.  | Cliente  |
 | RF006 - Visualizar especificação de um Post | Visualizar as informações de qualquer Post cadastrado.  |  Cliente |
 | RF007 - Visualizar especificação de um Post Próprio |  Visualizar as informações de um Post cadastrado por si próprio com a opção de deletar e alterar tal Post | Cliente  |
+| RF008 - Cadastrar Usuário | Cadastrar um novo Usuário no sistema, com as informações de login, senha, nome, revista associada. | Cliente |
+| RF009 - Alterar Usuário | Alterar as informações da conta cadastrada no sistema. | Cliente |
+| RF010 - Deletar Usuário | Deletar a conta cadastrada no sistema. | Cliente |
+| RF011 - Visualizar Dados Pessoais | Um usuário pode verificar seus dados pessoais cadastrados. | Cliente |
+| RF012 - Listar Usuários | Listar todos os Usuários cadastrados no sistema. | Administrador |
+| RF013 - Visualizar especificação de Usuário | Visualizar as informações de um usuário em específico. | Administrador |
 | RF014 - Cadastrar Revista | Cadastrar uma revista no sistema. Uma revista possui  nome, login, senha | Revista |
 | RF015 - Alterar dados de Revista. | Alterar seus dados cadastrados no sistema. | Revista |
 | RF016 - Deletar Revista. | Excluir seu cadastro no sistema. | Revista |
 | RF017 - Visualizar Revistas. | Visualizar lista de todas as Revistas cadastradas no sistema | Revista/Usuário |
 | RF018 - Visualizar especificação de uma Revista. | Visualizar os dados públicos de uma Revista cadastrada no sistema. | Revista/Usuário |
-
-
 
 
 ## Lista de Requisitos Não-Funcionais

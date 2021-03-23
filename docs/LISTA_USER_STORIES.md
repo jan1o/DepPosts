@@ -8,6 +8,39 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 ### User Story US01 - Manter Usuário
 
+| US001 - Manter Usuário  |    |
+| - | - |
+| Descrição   | O sistema deve manter um cadastro de usuário que tem acesso ao sistema via login e senha. Um usuário tem os atributos … . O usuário pode registrar-se diretamente no sistema. Além disso, o usuário poderá alterar alguns dados, como o e-mail ou a senha.  |
+
+| ***Requisitos envolvidos*** |  |
+| ------ | ------ |
+| RF008 | Cadastrar Usuário |
+| RF009 | Alterar Usuário |
+| RF010 | Excluir Usuário |
+| RF011 | Consultar Usuário |
+| RF012 | Listar Todos Usuários |
+| RF013 | Visualizar especificação de Usuário |
+
+| Prioridade | Essencial |
+| ------ | ------ |
+| ***Estimativa*** | ***8 horas*** |
+| Tempo Gasto (real) |  |
+
+| Testes de Aceitação (TA) | | | | |
+| - | - | - | - | - |
+| TA01.01 | Login de Usuário bem sucedido. | Usuário digita login e senha corretamente. | Sucesso ao logar. |  |
+| TA01.02 | Login de usuário mal sucedido. | Usuário digita login ou senha incorreto. | Falha ao logar |  |
+| TA01.03 | Alteração de dados pessoais. | Usuário Altera dados pessoais. | Dados alterados com sucesso. |  |
+| TA01.04 | Exclusão de conta | Usuário deleta sua conta. | Usuário deletado com sucesso. |  |
+| TA01.05 | Cadastrar conta bem sucedido | Usuário digita um login novo e único e uma senha. | Redirecionamento para tela de informações pessoais. |  |
+| TA01.06 | Cadastrar conta mal sucedido 01 | Usuário digita um login já existente. | Usuário não cadastrado |  |
+| TA01.07 | Cadastrar conta mal sucedido 02 | Usuário digita login válido, mas não digita senha. | Usuário não cadastrado. |  |
+| TA01.08 | Cadastrar conta mal sucedido 03 | Usuário digita senha, mas não digita login. | Usuário não cadastrado. |  |
+| TA01.09 | Informações pessoais cadastradas bem sucedido | Usuário digita todas as informações pessoais necessárias. | Usuário cadastrado com sucesso. |  |
+| TA01.10 | Cadastrar informações pessoais mal sucedido. | Usuário não digita informações pessoais necessárias. | Usuário não cadastrado. |  |
+| TA01.11 | Listar Todos Usuários | Administrador tenta visualizar usuários. | Lista de todos os Usuários exibida. |  |
+| TA01.12 | Exibir um usuário | Administrador tenta visualizar os dados pessoais de um usuário | Dados pessoais (exceto senha) exibidos. |  |
+
 ### User Story US02 - Manter Posts  
 
 | US002 - Manter Post  |    |
