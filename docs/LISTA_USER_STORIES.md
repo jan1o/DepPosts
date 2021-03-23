@@ -10,7 +10,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 ### User Story US02 - Manter Posts  
 
-| US001 - Manter Post  |    |
+| US002 - Manter Post  |    |
 | - | - |
 | Descrição   | O sistema deve manter todos os posts nele inseridos. Um usuário pode fazer, alterar, deletar e visualizar suas postagens. | 
 
@@ -40,3 +40,35 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | TA02.06 | Listar todos os posts próprios | O usuário tenta ver todos os seus post | Lista de todos os posts próprios. |  |
 
 ### User Story US03 - Manter Revista
+
+| US003 - Manter Revista | |
+| - | - |
+| Descrição | O sistema deve manter um cadastro de revista que tem acesso ao sistema via login e senha. Uma revista tem os atributos nome, login, e senha. A revista pode registrar-se diretamente no sistema. Além disso, a revista poderá alterar alguns de seus dados como o nome, e a senha. |
+
+| ***Requisitos envolvidos*** |  |
+| ------ | ------ |
+| RF014 | Cadastrar Revista |
+| RF015 | Alterar dados de Revista |
+| RF016 | Deletar Revista |
+| RF017 | Visualizar Revistas | 
+| RF018 | Visualizar especificação de uma Revista |
+
+| Prioridade | Essencial |
+| ------ | ------ |
+| ***Estimativa*** | ***6 horas*** |
+| Tempo Gasto (real) |  |
+
+| Testes de Aceitação (TA) | | | | |
+| - | - | - | - | - |
+| ***Código*** | ***Descrição*** | ***Passos*** | ***Resultado Esperado*** | ***Resultado Obtido*** |
+| TA03.01 | Login de revista bem sucedido. | Revista digita login e senha corretamente. | Sucesso ao logar. |
+| TA03.02 | Login de revista mal sucedido. | Revista digita login ou senha incorreta. | Falha ao logar |
+| TA03.03 | Alteração de dados próprios. | Revista altera dados próprios. | Dados alterados com sucesso. |
+| TA03.04 | Exclusão da revista. | Revista deleta sua conta. | Revista deletada com sucesso. |
+| TA03.05 | Cadastrar revista bem sucedido | Revista digita um nome único, um login novo e único e uma senha. | Redirecionamento para tela de informações próprias. |
+| TA03.06 | Cadastrar revista mal sucedido 01 | Revista digita um login já existente. | Revista não cadastrada. |
+| TA03.07 | Cadastrar revista mal sucedido 02 | Revista digita login válido, mas não digita senha. | Revista não cadastrada. |
+| TA03.08 | Cadastrar revista mal sucedido 03 | Revista digita senha, mas não digita login. | Revista não cadastrada. |
+| TA03.09 | Cadastrar revista mal sucedido 04 | Revista digita senha e login válidos, mas não digita o nome válido. | Revista não cadastrada. |
+| TA03.10 | Listar todas as revistas. | Administrador tenta visualizar revistas. | Lista de toda as revistas exibida. |
+| TA03.11 | Exibir uma revista | Administrador tenta visualizar os dados de uma revista | Dados da revista (exceto senha) exibidos. |
