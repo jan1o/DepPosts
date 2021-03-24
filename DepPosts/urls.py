@@ -19,6 +19,7 @@ from .views import *
 from usuarios import urls as usuario_urls
 
 urlpatterns = [
+    path('', hello),
     path('admin/', admin.site.urls),
     path('hello/', hello),
     path('account/', include(usuario_urls)),
