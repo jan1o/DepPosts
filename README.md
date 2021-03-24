@@ -35,7 +35,7 @@ Uma vez dentro do ambiente, instale os pacotes necessários ao projeto com o `pi
 
 Até aqui, todos os passos executados preparam o ambiente para execução do projeto.
 
-## Inicializando o projeto  
+## Inicializando o Projeto  
 
 Para inicializar o projeto, primeiro se faz necessário executar as migrações do mesmo, com o comando:  
 `$ python manage.py makemigrations`  
