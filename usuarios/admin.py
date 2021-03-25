@@ -10,4 +10,4 @@ class UsuarioAdmin(admin.ModelAdmin):
 @admin.register(Revista)
 class RevistaAdmin(admin.ModelAdmin):
     model = Revista
-    list_display = ('user', 'nome',)
+    list_display = ('nome',)
