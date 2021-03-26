@@ -16,10 +16,11 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | ------ | ------ |
 | RF008 | Cadastrar Usuário |
 | RF009 | Alterar Usuário |
-| RF010 | Excluir Usuário |
-| RF011 | Consultar Usuário |
-| RF012 | Listar Todos Usuários |
-| RF013 | Visualizar especificação de Usuário |
+| RF010 | Logar Como Usuario |
+| RF011 | Deslogar Usuario |
+| RF012 | Consultar Usuário |
+| RF013 | Listar Todos Usuários |
+| RF014 | Visualizar especificação de Usuário |
 
 | Prioridade | Essencial |
 | ------ | ------ |
@@ -42,6 +43,10 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | TA01.11 | Listar Todos Usuários | Administrador tenta visualizar usuários. | Lista de todos os Usuários exibida. |  |
 | TA01.12 | Exibir um usuário | Administrador tenta visualizar os dados pessoais de um usuário | Dados pessoais (exceto senha) exibidos. |  |
 | TA01.13 | Consultar Informações de Usuário | Usuário tenta ver suas informações pessoais | Todos os dados pessoais exibidos |  |
+| TA01.14 | Logar bem sucedido | Usuário digita seu login e senha corretamente | Login realizado com sucesso |  |
+| TA01.15 | Logar mal sucedido 01 | Usuário digita seu login e/ou senha errado | Login não efetuado |  |
+| TA01.16 | Logar mal sucedido 02 | Usuário não digita seu login e/ou senha | Login não efetuado |  |
+
 
 ### User Story US02 - Manter Posts  
 
@@ -82,11 +87,11 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 | ***Requisitos envolvidos*** |  |
 | ------ | ------ |
-| RF014 | Cadastrar Revista |
-| RF015 | Alterar dados de Revista |
-| RF016 | Deletar Revista |
-| RF017 | Visualizar Revistas | 
-| RF018 | Visualizar especificação de uma Revista |
+| RF015 | Cadastrar Revista |
+| RF016 | Alterar dados de Revista |
+| RF017 | Deletar Revista |
+| RF018 | Visualizar Revistas |
+| RF019 | Visualizar especificação de uma Revista |
 
 | Prioridade | Essencial |
 | ------ | ------ |
