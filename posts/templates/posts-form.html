@@ -11,17 +11,6 @@
         {{ form|bootstrap }}
         <button type="submit" class="btn btn-primary">Salvar</button>
     </form>
-    <br>
-    <button onclick="goBack()" class="btn btn-danger">Go Back</button> &nbsp;
-
-
-    {% if post %}
-        <a href="{% url 'delete_post' post.id %}" class="btn btn-danger">Deletar</a>
-    {% endif %}
+    
+    <button onclick="goBack()" class="btn btn-danger" style="margin-top: 10px;">Go Back</button> &nbsp;
 {% endblock %}
-
-<script>
-function goBack() {
-    window.history.back()
-}
-</script>

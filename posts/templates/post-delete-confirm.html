@@ -6,14 +6,8 @@
 {% block main %}
     <form method="post">
         {% csrf_token %}
-        <h2>Certeza que quer deletar "{{ post.titulo }}"?</h2>
-        <button onclick="goBack()" class="btn btn-danger">Go Back</button> &nbsp;
+        <h2  style="text-align: center;">Certeza que quer deletar "{{ post.titulo }}"?</h2>
         <button type="submit" class="btn btn-primary">Confirmar</button>
     </form>
+    <button onclick="goBack()" class="btn btn-danger" style="margin-top: 10px;">Go Back</button>
 {% endblock %}
-
-<script>
-    function goBack() {
-        window.history.back()
-    }
-</script>
