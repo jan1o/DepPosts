@@ -22,7 +22,7 @@ O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfi
 | - | - |
 | Administrador | Este usuário realiza os cadastros base e pode realizar qualquer função. | 
 | Usuário | Este usuário pode realizar cadastros de posts e manipular seus posts. |
-| Revista | Este usuário pode realizar cadastro próprio e ter posts associados a si. |
+| Visitante | Este usuário pode visualizar os dados públicos do sistema. |
 
 ## Lista de Requisitos Funcionais
 
@@ -48,6 +48,8 @@ O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfi
 | RF017 - Deletar Revista. | Excluir seu cadastro no sistema. | Revista |
 | RF018 - Visualizar Revistas. | Visualizar lista de todas as Revistas cadastradas no sistema | Revista/Usuário |
 | RF019 - Visualizar especificação de uma Revista. | Visualizar os dados públicos de uma Revista cadastrada no sistema. | Revista/Usuário |
+| RF020 - Visualizar minhas Revistas. | Visualizar lista de todas as Revistas cadastradas pelo usuário logado. | Todos |
+| RF021 - Visualizar as especificações das minhas Revistas. | Visualizar todos os dados de uma Revista cadastrada pelo usuário logado. | Todos |
 
 
 ## Lista de Requisitos Não-Funcionais
