@@ -5,7 +5,7 @@ O DepPosts é uma aplicação que mantém posts de autores, vinculados (ou não)
 ## Documento de Visão  
 
 O documento de visão está disponível
-[Nesse link](https://github.com/jan1o/DepPosts/blob/master/docs/DOC_VISAO.md).
+[Nesse link](https://github.com/jan1o/DepPosts/blob/master/docs/REQUISITOS.md).
 
 ## Lista de User Stories
 
