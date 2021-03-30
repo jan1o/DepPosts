@@ -1,0 +1,30 @@
+<!doctype html>
+<!--suppress HtmlUnknownTarget -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Posts</title>
+</head>
+<body>
+    <a style="text-decoration: none" href="{% url 'hello' %}">Início</a>
+    <br/>
+    <ul>
+        {% for post in posts %}
+            <a href="{% url 'update_post' post.id %}">
+                <li> {{ post.titulo }}</li>  - {{ post.dataPublicacao }}
+            </a>
+            <p></p>
+        {% endfor %}
+    </ul>
+
+    <button><a style="text-decoration: none" href="{% url 'create_post' %}">Novo Post</a></button>
+</body>
+<script>
+function goBack() {
+    window.history.back()
+}
+</script>
+</html>

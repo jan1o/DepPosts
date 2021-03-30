@@ -38,15 +38,16 @@ O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfi
 | RF007 - Visualizar especificação de um Post Próprio |  Visualizar as informações de um Post cadastrado por si próprio com a opção de deletar e alterar tal Post | Cliente  |
 | RF008 - Cadastrar Usuário | Cadastrar um novo Usuário no sistema, com as informações de login, senha, nome, revista associada. | Cliente |
 | RF009 - Alterar Usuário | Alterar as informações da conta cadastrada no sistema. | Cliente |
-| RF010 - Deletar Usuário | Deletar a conta cadastrada no sistema. | Cliente |
-| RF011 - Visualizar Dados Pessoais | Um usuário pode verificar seus dados pessoais cadastrados. | Cliente |
-| RF012 - Listar Usuários | Listar todos os Usuários cadastrados no sistema. | Administrador |
-| RF013 - Visualizar especificação de Usuário | Visualizar as informações de um usuário em específico. | Administrador |
-| RF014 - Cadastrar Revista | Cadastrar uma revista no sistema. Uma revista possui  nome, login, senha | Revista |
-| RF015 - Alterar dados de Revista. | Alterar seus dados cadastrados no sistema. | Revista |
-| RF016 - Deletar Revista. | Excluir seu cadastro no sistema. | Revista |
-| RF017 - Visualizar Revistas. | Visualizar lista de todas as Revistas cadastradas no sistema | Revista/Usuário |
-| RF018 - Visualizar especificação de uma Revista. | Visualizar os dados públicos de uma Revista cadastrada no sistema. | Revista/Usuário |
+| RF010 - Realizar Login | Fazer login no sistema. | Cliente |
+| RF011 - Realizar Logoff | Deslogar do sistema. | Cliente |
+| RF012 - Visualizar Dados Pessoais | Um usuário pode verificar seus dados pessoais cadastrados. | Cliente |
+| RF013 - Listar Usuários | Listar todos os Usuários cadastrados no sistema. | Administrador |
+| RF014 - Visualizar especificação de Usuário | Visualizar as informações de um usuário em específico. | Administrador |
+| RF015 - Cadastrar Revista | Cadastrar uma revista no sistema. Uma revista possui  nome, login, senha | Revista |
+| RF016 - Alterar dados de Revista. | Alterar seus dados cadastrados no sistema. | Revista |
+| RF017 - Deletar Revista. | Excluir seu cadastro no sistema. | Revista |
+| RF018 - Visualizar Revistas. | Visualizar lista de todas as Revistas cadastradas no sistema | Revista/Usuário |
+| RF019 - Visualizar especificação de uma Revista. | Visualizar os dados públicos de uma Revista cadastrada no sistema. | Revista/Usuário |
 
 
 ## Lista de Requisitos Não-Funcionais
