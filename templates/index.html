@@ -18,8 +18,13 @@
         |
         <a href="{% url 'signin' %}">Cadastrar-se</a>
     {% endif %}
-    | <a href="/admin" target="_blank">Admin</a>
-    <h1> Ola Mundo </h1>
+    |<a href="/admin" target="_blank">Admin</a>
+
+    <h2> Mantedor de Posts | DepPosts </h2>
+
+    {% if user.is_authenticated %}
+        <a href="{% url 'list_posts' %}">Posts</a>
+    {% endif %}
 
 </body>
 </html>

@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path, include
 from .views import *
 from usuarios import urls as usuario_urls
+from posts import urls as post_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('posts/', include(post_urls)),
     path('', hello, name='hello'),
     path('', include(usuario_urls)),
 ]

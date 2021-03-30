@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     'usuarios',
+    'posts',
 ]
 
 # Crispy_forms
@@ -59,7 +60,7 @@ ROOT_URLCONF = 'DepPosts.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates', 'usuarios/templates'],
+        'DIRS': ['templates', 'usuarios/templates', 'posts/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
