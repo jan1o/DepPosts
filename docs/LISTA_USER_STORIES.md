@@ -33,7 +33,6 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | TA01.01 | Login de Usuário bem sucedido. | Usuário digita login e senha corretamente. | Sucesso ao logar. |  |
 | TA01.02 | Login de usuário mal sucedido. | Usuário digita login ou senha incorreto. | Falha ao logar |  |
 | TA01.03 | Alteração de dados pessoais. | Usuário Altera dados pessoais. | Dados alterados com sucesso. |  |
-| TA01.04 | Exclusão de conta | Usuário deleta sua conta. | Usuário deletado com sucesso. |  |
 | TA01.05 | Cadastrar conta bem sucedido | Usuário digita um login novo e único e uma senha. | Redirecionamento para tela de informações pessoais. |  |
 | TA01.06 | Cadastrar conta mal sucedido 01 | Usuário digita um login já existente. | Usuário não cadastrado |  |
 | TA01.07 | Cadastrar conta mal sucedido 02 | Usuário digita login válido, mas não digita senha. | Usuário não cadastrado. |  |
@@ -42,10 +41,8 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | TA01.10 | Cadastrar informações pessoais mal sucedido. | Usuário não digita informações pessoais necessárias. | Usuário não cadastrado. |  |
 | TA01.11 | Listar Todos Usuários | Administrador tenta visualizar usuários. | Lista de todos os Usuários exibida. |  |
 | TA01.12 | Exibir um usuário | Administrador tenta visualizar os dados pessoais de um usuário | Dados pessoais (exceto senha) exibidos. |  |
-| TA01.13 | Consultar Informações de Usuário | Usuário tenta ver suas informações pessoais | Todos os dados pessoais exibidos |  |
-| TA01.14 | Logar bem sucedido | Usuário digita seu login e senha corretamente | Login realizado com sucesso |  |
-| TA01.15 | Logar mal sucedido 01 | Usuário digita seu login e/ou senha errado | Login não efetuado |  |
-| TA01.16 | Logar mal sucedido 02 | Usuário não digita seu login e/ou senha | Login não efetuado |  |
+
+
 
 
 ### User Story US02 - Manter Posts  
@@ -92,6 +89,8 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | RF017 | Deletar Revista |
 | RF018 | Visualizar Revistas |
 | RF019 | Visualizar especificação de uma Revista |
+| RF020 | Visualizar minhas Revistas. |
+| RF021 | Visualizar as especificações das minhas Revistas. |
 
 | Prioridade | Essencial |
 | ------ | ------ |
@@ -101,14 +100,14 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | Testes de Aceitação (TA) | | | | |
 | - | - | - | - | - |
 | ***Código*** | ***Descrição*** | ***Passos*** | ***Resultado Esperado*** | ***Resultado Obtido*** |
-| TA03.01 | Login de revista bem sucedido. | Revista digita login e senha corretamente. | Sucesso ao logar. |
-| TA03.02 | Login de revista mal sucedido. | Revista digita login ou senha incorreta. | Falha ao logar |
-| TA03.03 | Alteração de dados próprios. | Revista altera dados próprios. | Dados alterados com sucesso. |
-| TA03.04 | Exclusão da revista. | Revista deleta sua conta. | Revista deletada com sucesso. |
-| TA03.05 | Cadastrar revista bem sucedido | Revista digita um nome único, um login novo e único e uma senha. | Redirecionamento para tela de informações próprias. |
-| TA03.06 | Cadastrar revista mal sucedido 01 | Revista digita um login já existente. | Revista não cadastrada. |
-| TA03.07 | Cadastrar revista mal sucedido 02 | Revista digita login válido, mas não digita senha. | Revista não cadastrada. |
-| TA03.08 | Cadastrar revista mal sucedido 03 | Revista digita senha, mas não digita login. | Revista não cadastrada. |
-| TA03.09 | Cadastrar revista mal sucedido 04 | Revista digita senha e login válidos, mas não digita o nome válido. | Revista não cadastrada. |
-| TA03.10 | Listar todas as revistas. | Administrador tenta visualizar revistas. | Lista de toda as revistas exibida. |
-| TA03.11 | Exibir uma revista | Administrador tenta visualizar os dados de uma revista | Dados da revista (exceto senha) exibidos. |
+| TA03.01 | Alteração de dados de uma revista pelo Usuário. | Usuário logado altera dados de uma das suas revistas. | Dados alterados com sucesso. |  |
+| TA03.02 | Alteração de dados de uma revista pelo Administrador. | Administrador logado altera dados de qualquer revista. | Dados alterados com sucesso. |  |
+| TA03.03 | Exclusão da revista pelo Usuário. | Usuário logado deleta uma de suas revistas. | Revista deletada com sucesso.|  |
+| TA03.04 | Exclusão da revista pelo Administrador. | Administrador logado deleta qualquer revista. | Revista deletada com sucesso. |  |
+| TA03.05 | Cadastrar revista bem sucedido | Revista digita um nome único. | Redirecionamento para tela de listagem das revistas do usuário logado. |  |
+| TA03.06 | Cadastrar revista mal sucedido 01 | Usuário/Administrador digita um nome já existente. | Revista não cadastrada. |
+| TA03.07 | Cadastrar revista mal sucedido 02 | Usuário/Administrador digita nome inválido. | Revista não cadastrada. |
+| TA03.08 | Listar todas as revistas. | Administrador tenta visualizar revistas. | Lista de todas as revistas é exibida. |  |
+| TA03.09 | Exibir os dados de uma revista qualquer. | Administrador tenta visualizar os dados de uma revista | Dados da revista exibidos. |  |
+| TA03.10 | Listar todas as revistas do Usuário logado. | Usuário tenta visualizar suas revistas. |Lista das revistas do Usuário logado é exibida. |  |
+| TA03.11 | Exibir os dados de uma das revistas do Usuário logado. | Usuário tenta visualizar os dados de uma de suas revistas. | Dados da revista exibidos. |  |
