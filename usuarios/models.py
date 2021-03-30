@@ -1,11 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-
-class Revista(models.Model):
-    nome = models.CharField(max_length=100)
-
-    def __str__(self):
-        return self.nome
+from revistas.models import Revista
 
 class Usuario(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, default='')

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+
+{% block title %}Editar Revista{% endblock %}
+
+{% block main %}
+    <center><h1>Atualizar Revista</h1></center>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form|bootstrap }}
+        <button type="submit" class="btn btn-primary">Atualizar</button>
+    </form>
+
+    <br/>
+    <a href="{% url 'listarRevista'%}" class="btn btn-danger">Voltar</a>
+{% endblock %}
