@@ -7,9 +7,3 @@ from .models import *
 class UsuarioAdmin(admin.ModelAdmin):
     model = Usuario
     list_display = ('user', 'nome',)
-
-
-@admin.register(Revista)
-class RevistaAdmin(admin.ModelAdmin):
-    model = Revista
-    list_display = ('nome',)

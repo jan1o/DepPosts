@@ -12,12 +12,10 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Post',
+            name='Revista',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('titulo', models.CharField(max_length=100)),
-                ('corpo', models.CharField(max_length=1000)),
-                ('dataPublicacao', models.DateTimeField(auto_now_add=True)),
+                ('nome', models.CharField(max_length=100, unique=True)),
             ],
         ),
     ]

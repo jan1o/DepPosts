@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from .views import *
 from usuarios import urls as usuario_urls
+from revistas import urls as revista_urls
 from posts import urls as post_urls
 
 urlpatterns = [
@@ -24,4 +25,5 @@ urlpatterns = [
     path('posts/', include(post_urls)),
     path('', hello, name='hello'),
     path('', include(usuario_urls)),
+    path('revista/', include(revista_urls)),
 ]

@@ -1,23 +1,13 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Deletar Post</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load bootstrap %}
+
+{% block title %}Deletar Post{% endblock %}
+
+{% block main %}
     <form method="post">
         {% csrf_token %}
-        <h2>Certeza que quer deletar {{ post.titulo }} ?</h2>
-        <button onclick="goBack()">Go Back</button> &nbsp;
-        <button type="submit">Confirmar</button>
+        <h2  style="text-align: center;">Certeza que quer deletar "{{ post.titulo }}"?</h2>
+        <button type="submit" class="btn btn-primary">Confirmar</button>
     </form>
-</body>
-<script>
-function goBack() {
-    window.history.back()
-}
-</script>
-</html>
+    <button onclick="goBack()" class="btn btn-danger" style="margin-top: 10px;">Go Back</button>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Confirmar Exclusão{% endblock %}
+
+{% block main %}
+    <center><h1>Excluir a revista "{{ revista.nome }}"?</h1></center>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary">Sim</button>
+    </form>
+
+    <a href="{% url 'listarRevista'%}" class="btn btn-danger" style="margin-top: 10px;">Não</a>
+{% endblock %}

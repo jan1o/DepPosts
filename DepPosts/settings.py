@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
+    'bootstrapform',
     'usuarios',
+    'revistas',
     'posts',
 ]
 
@@ -60,7 +62,7 @@ ROOT_URLCONF = 'DepPosts.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates', 'usuarios/templates', 'posts/templates'],
+        'DIRS': ['templates', 'usuarios/templates', 'posts/templates', 'revistas/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
