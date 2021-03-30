@@ -8,8 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-
     {% if user.is_authenticated %}
+        <h3>Olá, {{ user }}</h3>
         <a href="{% url 'logout' %}">Logout</a>
         |
         <a href="{% url 'update' %}">Atualizar Dados</a>
@@ -18,7 +18,7 @@
         |
         <a href="{% url 'signin' %}">Cadastrar-se</a>
     {% endif %}
-
+    | <a href="/admin" target="_blank">Admin</a>
     <h1> Ola Mundo </h1>
 
 </body>

@@ -4,19 +4,18 @@ from django.shortcuts import get_object_or_404
 from .forms import UsuarioForm
 from .models import Usuario
 
+
 class UsuarioCreate(CreateView):
-    template_name = "signin.html"
+    template_name = "signing.html"
     form_class = UsuarioForm
     success_url = reverse_lazy('login')
 
     def form_valid(self, form):
         url = super().form_valid(form)
-
         self.object.save()
-
         Usuario.objects.create(user=self.object)
-
         return url
+
 
 class UsuarioUpdate(UpdateView):
     template_name = "update.html"

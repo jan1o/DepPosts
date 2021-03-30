@@ -17,8 +17,9 @@
     <form action="" method="POST">
         {% csrf_token %}
         {{ form|crispy }}
-
-        <button type="submit" class="btn btn-light mt-3">Atualizar</button>
+        <br/>
+        <button type="submit" class="btn btn-light mt-3">Atualizar</button>&nbsp;
+        <button onclick="goBack()">Go Back</button> &nbsp;
     </form>
 
 
