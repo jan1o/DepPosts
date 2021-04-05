@@ -53,4 +53,17 @@ Talvez seja necessário criar um super usuário, se a ideia for ir mais a fundo 
 Feito todos os passos anteriores, apenas execute o comando abaixo e seja para url indicada:  
 `$ python manage.py runserver`.  
 
+# Continuos Integration
+Resumo sobre CI/CD está disponível
+[Nesse link](https://github.com/jan1o/DepPosts/blob/master/docs/Resumo_CI_CD.md).
+
+Manual de Implantação do Django CI está disponivel
+[Nesse link](https://github.com/jan1o/DepPosts/blob/master/docs/Manual_Implanta%C3%A7%C3%A3o_CI.md). 
+
+Arquivo do Django CI está disponível
+[Nesse link](https://github.com/jan1o/DepPosts/blob/master/docs/django.yml). 
+
+
+
+
 `Fim <3`.
