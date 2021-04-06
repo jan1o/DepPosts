@@ -61,9 +61,6 @@ Manual de Implantação do Django CI está disponivel
 [Nesse link](https://github.com/jan1o/DepPosts/blob/master/docs/Manual_Implanta%C3%A7%C3%A3o_CI.md). 
 
 Arquivo do Django CI está disponível
-[Nesse link](https://github.com/jan1o/DepPosts/blob/master/docs/django.yml). 
+[Nesse link](https://github.com/jan1o/DepPosts/blob/master/docs/django.yml).
 
-
-
-
-`Fim <3`.
+`Fim 💓`.
