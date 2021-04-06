@@ -55,10 +55,10 @@ Feito todos os passos anteriores, apenas execute o comando abaixo e seja para ur
 
 # Continuos Integration
 Resumo sobre CI/CD está disponível
-[Nesse link](https://github.com/jan1o/DepPosts/blob/master/docs/Resumo_CI_CD.md).
+[Nesse link](https://github.com/jan1o/DepPosts/blob/master/docs/RESUMO_CI-CD.md).
 
 Manual de Implantação do Django CI está disponivel
-[Nesse link](https://github.com/jan1o/DepPosts/blob/master/docs/Manual_Implanta%C3%A7%C3%A3o_CI.md). 
+[Nesse link](https://github.com/jan1o/DepPosts/blob/master/docs/MANUAL_IMPLANTACAO_CI.md). 
 
 Arquivo do Django CI está disponível
 [Nesse link](https://github.com/jan1o/DepPosts/blob/master/docs/django.yml).
