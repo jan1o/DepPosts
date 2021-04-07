@@ -63,4 +63,12 @@ Manual de Implantação do Django CI está disponivel
 Arquivo do Django CI está disponível
 [Nesse link](https://github.com/jan1o/DepPosts/blob/master/docs/django.yml).
 
+# Testes de Mutação
+
+Resumo sobre testes de mutação está disponível
+[Nesse link](https://github.com/jan1o/DepPosts/blob/master/docs/RESUMO_TESTES_MUTACAO.md).
+
+Manual de implantação dos testes de mutação está disponível
+[Nesse link](https://github.com/jan1o/DepPosts/blob/master/docs/MANUAL_IMPLANTA%C3%87%C3%83O_TESTES_MUTACAO.md).
+
 `Fim 💓`.
