@@ -6,8 +6,6 @@ O seu objetivo é garantir a qualidade dos casos de uso de teste para que ele n�
 relativamente pequenas, para que não afetem o objetivo geral do programa. Testes de mutação também podem ser chamados de testes de estratégia baseados em falha, pelo fato 
 de envolver a criação de uma falha no programa, tem características de testes de caixa branca e é usado principalmente em testes de unidade.
 
-“Os testadores de mutação modificam (modificam) o código do seu projeto de pequenas maneiras e, em seguida, executam o conjunto de testes. Se todos os testes passarem, 
-essa mutação é considerada um problema: um bug que seus testes não detectaram. A teoria é que uma mutação mudará o comportamento do seu programa, portanto, se o seu conjunto 
-de testes estiver testando suficientemente perto, alguns testes devem falhar para cada mutação. Se uma mutação não produzir uma falha no teste, você precisará adicioná-la aos 
-seus testes.” (Traduzido pelo autor) Disponível em: 
-<https://nedbatchelder.com/blog/201903/mutmut.html>
+> Os testadores de mutação modificam (mutam) o código do seu projeto de pequenas maneiras e, em seguida, executam o conjunto de testes. Se todos os testes passarem, então essa mutação é considerada um problema: Um bug que seus testes não detectaram. A teoria é que uma mutação mudará o comportamento do seu programa, portanto, se o seu conjunto de testes estiver testando suficientemente, alguns testes devem falhar para cada mutação. Se uma mutação não produzir uma falha no teste, você precisará adiciona-lo aos seus testes.
+>    
+Traduzido de: <https://nedbatchelder.com/blog/201903/mutmut.html>.
