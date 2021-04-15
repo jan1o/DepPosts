@@ -1,4 +1,5 @@
 from django.views.generic.edit import CreateView, UpdateView
+from django.contrib.auth.decorators import login_required
 from django.urls import reverse_lazy
 from django.shortcuts import get_object_or_404
 from .forms import UsuarioForm
@@ -15,7 +16,6 @@ class UsuarioCreate(CreateView):
         self.object.save()
         Usuario.objects.create(user=self.object)
         return url
-
 
 class UsuarioUpdate(UpdateView):
     template_name = "update.html"
