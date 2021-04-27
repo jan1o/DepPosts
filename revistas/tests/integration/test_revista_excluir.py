@@ -11,11 +11,14 @@ class TestCaseRevista(TestCase):
     url_cadastrar = '/revista/adicionar/'
     url = '/revista/excluir/'
 
-    @pytest.mark.django_db(transaction=True)
-    def test_remove_revista(self):
+    def set_user(self):
         User.objects.create_user('janio', 'meuemail@email.com', 'minhasenha123')
         Usuario.objects.create(nome="janio Fernandes", user=User.objects.get(username='janio'))
         user_login = self.client.login(username="janio", password="minhasenha123")
+
+    @pytest.mark.django_db(transaction=True)
+    def test_remove_revista(self):
+        self.set_user()
         response = self.client.post(self.url_cadastrar,{
             'nome': 'revista1',
         })
@@ -25,9 +28,7 @@ class TestCaseRevista(TestCase):
 
     @pytest.mark.django_db(transaction=True)
     def test_remove_revista_correct_url(self):
-        User.objects.create_user('janio', 'meuemail@email.com', 'minhasenha123')
-        Usuario.objects.create(nome="janio Fernandes", user=User.objects.get(username='janio'))
-        user_login = self.client.login(username="janio", password="minhasenha123")
+        self.set_user()
         response = self.client.post(self.url_cadastrar,{
             'nome': 'revista1',
         })
@@ -36,9 +37,7 @@ class TestCaseRevista(TestCase):
 
     @pytest.mark.django_db(transaction=True)
     def test_remove_correct_revista_for_id(self):
-        User.objects.create_user('janio', 'meuemail@email.com', 'minhasenha123')
-        Usuario.objects.create(nome="janio Fernandes", user=User.objects.get(username='janio'))
-        user_login = self.client.login(username="janio", password="minhasenha123")
+        self.set_user()
         response = self.client.post(self.url_cadastrar,{
             'nome': 'revista1',
         })
