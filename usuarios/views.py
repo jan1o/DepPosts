@@ -17,6 +17,7 @@ class UsuarioCreate(CreateView):
         Usuario.objects.create(user=self.object)
         return url
 
+
 class UsuarioUpdate(UpdateView):
     template_name = "update.html"
     model = Usuario

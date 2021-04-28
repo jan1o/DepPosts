@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from usuarios.models import Usuario
 import pytest
 
+
 class TestUpdate:
     client = Client()
     url = reverse('update')
