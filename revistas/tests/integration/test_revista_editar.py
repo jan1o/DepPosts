@@ -14,12 +14,12 @@ class TestCaseRevista(TestCase):
     def set_user(self):
         User.objects.create_user('janio', 'meuemail@email.com', 'minhasenha123')
         Usuario.objects.create(nome="janio Fernandes", user=User.objects.get(username='janio'))
-        user_login = self.client.login(username="janio", password="minhasenha123")
+        self.client.login(username="janio", password="minhasenha123")
 
     @pytest.mark.django_db(transaction=True)
     def test_edit_revista(self):
         self.set_user()
-        response = self.client.post(self.url_cadastrar,{
+        self.client.post(self.url_cadastrar,{
             'nome': 'revista1',
         })
         revista = Revista.objects.get(nome='revista1')
@@ -29,7 +29,7 @@ class TestCaseRevista(TestCase):
     @pytest.mark.django_db(transaction=True)
     def test_edit_revista_correct_url(self):
         self.set_user()
-        response = self.client.post(self.url_cadastrar,{
+        self.client.post(self.url_cadastrar,{
             'nome': 'revista1',
         })
         revista = Revista.objects.get(nome='revista1')
@@ -44,11 +44,11 @@ class TestCaseRevista(TestCase):
     @pytest.mark.django_db(transaction=True)
     def test_edit_correct_revista_for_id(self):
         self.set_user()
-        response = self.client.post(self.url_cadastrar,{
+        self.client.post(self.url_cadastrar,{
             'nome': 'revista1',
         })
         revista = Revista.objects.get(nome='revista1')
-        response = self.client.post(self.url + str(revista.id) + '/',{
+        self.client.post(self.url + str(revista.id) + '/',{
             'nome': 'revista2',
         })
         revista = Revista.objects.get(nome='revista2')

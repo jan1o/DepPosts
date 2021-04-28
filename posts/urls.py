@@ -6,6 +6,6 @@ from .views import list_posts, create_post, update_post, delete_post
 urlpatterns = [
     path('', list_posts, name='list_posts'),
     path('new/', create_post, name='create_post'),
-    path('update/<int:identifier>/', update_post, name='update_post'),
-    path('delete/<int:identifier>/', delete_post, name='delete_post'),
+    path('update/<int:id>/', update_post, name='update_post'),
+    path('delete/<int:id>/', delete_post, name='delete_post'),
 ]

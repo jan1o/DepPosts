@@ -1,5 +1,5 @@
 from django.urls import reverse, resolve
-from django.test import TestCase, Client
+from django.test import Client
 from django.contrib.auth.models import User
 from usuarios.models import Usuario
 import pytest
@@ -11,11 +11,11 @@ class TestUpdate:
     def set_user(self):
         User.objects.create_user('janio', 'meuemail@email.com', 'minhasenha123')
         Usuario.objects.create(nome="janio Fernandes", user=User.objects.get(username='janio'))
-        user_login = self.client.login(username="janio", password="minhasenha123")
+        self.client.login(username="janio", password="minhasenha123")
 
     def set_i_user(self):
         User.objects.create_user('janio', 'meuemail@email.com', 'minhasenha123')
-        user_login = self.client.login(username="janio", password="minhasenha123")
+        self.client.login(username="janio", password="minhasenha123")
 
     @pytest.mark.django_db(transaction=True)
     def test_update_correct_call(self):

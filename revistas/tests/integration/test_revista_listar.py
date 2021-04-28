@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from usuarios.models import Usuario
 import pytest
 
+
 class TestCaseRevista(TestCase):
     client = Client()
     url = '/revista/listar/'
@@ -12,7 +13,6 @@ class TestCaseRevista(TestCase):
         User.objects.create_user('janio', 'meuemail@email.com', 'minhasenha123')
         Usuario.objects.create(nome="janio Fernandes", user=User.objects.get(username='janio'))
         user_login = self.client.login(username="janio", password="minhasenha123")
-
 
     @pytest.mark.django_db(transaction=True)
     def test_list_revista(self):

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 # Create your views here.
 from django.shortcuts import render, redirect
@@ -21,8 +21,8 @@ def create_post(request):
     return render(request, 'posts-form.html', {'form': form})
 
 
-def update_post(request, identifier):
-    post = Post.objects.get(id=identifier)
+def update_post(request, id):
+    post = get_object_or_404(Post, pk=id)
     form = PostForm(request.POST or None, instance=post)
 
     if form.is_valid():
@@ -32,8 +32,8 @@ def update_post(request, identifier):
     return render(request, 'posts-form.html', {'form': form, 'post': post})
 
 
-def delete_post(request, identifier):
-    post = Post.objects.get(id=identifier)
+def delete_post(request, id):
+    post = get_object_or_404(Post, pk=id)
 
     if request.method == 'POST':
         post.delete()

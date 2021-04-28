@@ -1,9 +1,10 @@
 from django.test import Client, TestCase
-from django.urls import reverse, resolve
+from django.urls import resolve
 from django.contrib.auth.models import User
 from usuarios.models import Usuario
 from revistas.models import Revista
 import pytest
+
 
 class TestCaseRevista(TestCase):
     client = Client()
@@ -12,7 +13,7 @@ class TestCaseRevista(TestCase):
     def set_user(self):
         User.objects.create_user('janio', 'meuemail@email.com', 'minhasenha123')
         Usuario.objects.create(nome="janio Fernandes", user=User.objects.get(username='janio'))
-        user_login = self.client.login(username="janio", password="minhasenha123")
+        self.client.login(username="janio", password="minhasenha123")
 
     @pytest.mark.django_db(transaction=True)
     def test_add_revista(self):
@@ -42,7 +43,7 @@ class TestCaseRevista(TestCase):
     @pytest.mark.django_db(transaction=True)
     def test_add_correct_revista(self):
         self.set_user()
-        response = self.client.post(self.url,{
+        self.client.post(self.url,{
             'nome': 'revista1',
         })
         revista = Revista.objects.get(nome='revista1')

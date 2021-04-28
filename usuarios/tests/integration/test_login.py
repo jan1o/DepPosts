@@ -1,16 +1,14 @@
 from django.urls import reverse, resolve
-from django.test import TestCase, Client
-import pytest
+from django.test import Client
+
 
 class TestLogin:
     client = Client()
     url = reverse('login')
 
-
     def test_login_call(self):
         response = self.client.get(self.url)
         assert response.status_code == 200
-
 
     def test_login_correct_page_content(self):
         response = self.client.get(self.url)

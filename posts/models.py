@@ -8,7 +8,7 @@ class Post(models.Model):
     corpo = models.CharField(max_length=1000)
     dataPublicacao = models.DateTimeField(auto_now_add=True)
     revistaAssociada = models.ForeignKey(Revista, on_delete=models.CASCADE, default='', null=True)
-    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE, default='', null=True)
+    #usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE, default='', null=True)
 
     def __str__(self):
         return self.titulo

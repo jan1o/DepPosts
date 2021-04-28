@@ -1,5 +1,5 @@
 from django.urls import reverse, resolve
-from django.test import TestCase, Client
+from django.test import Client
 from django.contrib.auth.models import User
 import pytest
 
@@ -11,7 +11,6 @@ class TestSignIn:
     def test_signin_call(self):
         response = self.client.get(self.url)
         assert response.status_code == 200
-
 
     def test_signin_correct_page_content(self):
         response = self.client.get(self.url)
@@ -28,7 +27,7 @@ class TestSignIn:
 
     @pytest.mark.django_db(transaction=True)
     def test_signin_correct_user_create(self):
-        response = self.client.post(self.url,{
+        self.client.post(self.url,{
             'username': 'usuario1',
             'password1': 'minhasenha123',
             'password2': 'minhasenha123'
