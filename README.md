@@ -1,6 +1,6 @@
 # DepPosts 
 
-O DepPosts é uma aplicação que mantém posts de autores, vinculados (ou não) há alguma revista.
+O DepPosts é uma aplicação que mantém posts de autores, vinculados há alguma revista.
 
 ## Documento de Visão  
 
