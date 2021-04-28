@@ -28,6 +28,3 @@ jobs:
     - name: Run Tests
       run: |
         py.test
-    - name: Run Mutation Tests
-      run: |
-        mutmut run
