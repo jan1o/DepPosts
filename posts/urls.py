@@ -1,11 +1,12 @@
 from django.urls import path
-from .views import list_posts, create_post, update_post, delete_post
+from django.contrib.auth.decorators import login_required
+from .views import CreatePost, ListPosts, UpdatePost, DeletePost
 
 # from .views import list_products, create_product, update_product, delete_product
 
 urlpatterns = [
-    path('', list_posts, name='list_posts'),
-    path('new/', create_post, name='create_post'),
-    path('update/<int:id>/', update_post, name='update_post'),
-    path('delete/<int:id>/', delete_post, name='delete_post'),
+    path('', ListPosts.as_view(), name='list_posts'),
+    path('new/', CreatePost.as_view(), name='create_post'),
+    path('update/<int:pk>/', UpdatePost.as_view(), name='update_post'),
+    path('delete/<int:pk>/', DeletePost.as_view(), name='delete_post'),
 ]

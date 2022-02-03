@@ -1,28 +1,43 @@
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.views.generic.list import ListView
+from django.urls import reverse_lazy
+
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, redirect, get_object_or_404
 from .models import Revista
 from .forms import RevistaForm
 
-# Create your views here.
-# @login_required
-# def listarRevistaUsuario(request):
-#     nome = request.GET.get('nome', None)
 
-#     if nome and sobrenome:
-#         revistas = Revista.objects.filter(first_name__icontains=nome, last_name__icontains=sobrenome)
-#     elif nome or sobrenome:
-#         revistas = Revista.objects.filter(first_name__icontains=nome) | Revista.objects.filter(last_name__icontains=sobrenome)
-#     else:
-#         revistas = Revista.objects.all()
+class ListRevistas(ListView):
+    model = Revista
+    template_name = 'listar-revista.html'
 
-#     return render(request, 'lista-revista.html', {'revistas': revistas})
+class CreateRevista(CreateView):
+    template_name = "adicionar-revista.html"
+    form_class = RevistaForm
+    success_url = reverse_lazy('list_revistas')
 
+    def form_valid(self, form):
+        url = super().form_valid(form)
+        return url
+
+class UpdateRevista(UpdateView):
+    model = Revista
+    fields = ['nome']
+    template_name = "editar-revista.html"
+    success_url = reverse_lazy('list_revistas')
+
+class DeleteRevista(DeleteView):
+    model = Revista
+    template_name = "excluir-revista.html"
+    success_url = reverse_lazy('list_revistas')
+
+'''
 @login_required
 def listarRevistaAdministrador(request):
     revistas = Revista.objects.all()
 
     return render(request, 'listar-revista.html', {'revistas': revistas})
-
+    
 @login_required
 def adicionarRevista(request):
     form = RevistaForm(request.POST or None, request.FILES or None)
@@ -53,3 +68,4 @@ def excluirRevista(request, id):
         return redirect('listarRevista')
 
     return render(request, 'excluir-revista.html', {'revista': revista})
+'''

@@ -1,10 +1,11 @@
 from django.urls import path
-from .views import listarRevistaAdministrador, adicionarRevista, editarRevista, excluirRevista
+#from .views import adicionarRevista, editarRevista, excluirRevista
+from .views import *
 
 urlpatterns = [
-    path('listar/', listarRevistaAdministrador, name='listarRevista'),
-    path('adicionar/', adicionarRevista, name='adicionarRevista'),
-    path('editar/<int:id>/', editarRevista, name='editarRevista'),
-    path('excluir/<int:id>/', excluirRevista, name='excluirRevista'),
+    path('', ListRevistas.as_view(), name='list_revistas'),
+    path('adicionar/', CreateRevista.as_view(), name='create_revista'),
+    path('editar/<int:pk>/', UpdateRevista.as_view(), name='update_revista'),
+    path('excluir/<int:pk>/', DeleteRevista.as_view(), name='delete_revista'),
 ]
 

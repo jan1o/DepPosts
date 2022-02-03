@@ -21,7 +21,7 @@
                         <th>Opções</th>
                     </tr>
 
-                    {% for post in posts %}
+                    {% for post in object_list %}
                     <tr>
                         <td>{{ post.titulo }}</td>
                         <td>{{ post.corpo }}</td>
@@ -36,7 +36,11 @@
                             </a>
                         </td>
                     </tr>
+                    {% empty %}
+                    <h1>Não há nenhum Post cadastrado!</h1>
+
                     {% endfor %}
+
                 </table>
             </center>
 

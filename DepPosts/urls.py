@@ -25,5 +25,5 @@ urlpatterns = [
     path('posts/', include(post_urls)),
     path('', hello, name='hello'),
     path('', include(usuario_urls)),
-    path('revista/', include(revista_urls)),
+    path('revistas/', include(revista_urls)),
 ]
