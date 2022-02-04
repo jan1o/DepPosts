@@ -1,6 +1,7 @@
 from django.views.generic.edit import CreateView, UpdateView
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse_lazy
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import get_object_or_404
 from .forms import UsuarioForm
 from .models import Usuario
@@ -18,7 +19,8 @@ class UsuarioCreate(CreateView):
         return url
 
 
-class UsuarioUpdate(UpdateView):
+class UsuarioUpdate(LoginRequiredMixin, UpdateView):
+    login_url = reverse_lazy('login')
     template_name = "update.html"
     model = Usuario
     fields = ["nome", "revista"]
